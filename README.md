@@ -14,3 +14,5 @@ So bored during the 2020 pandemic lockdown I decided to study exactly that and t
  </ul>
  
  <b><i>adding more soon..</b></i>
+<br><h2> Other programs</h2>
+<ul><li><a href='https://github.com/stqc/datastructures_algorithms_cpp/blob/master/counting_inversions.cpp'>Counting Inversions</a></li></ul>
