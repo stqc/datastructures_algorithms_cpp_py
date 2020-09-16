@@ -1,4 +1,4 @@
-# Data Structures and Algorithms C++
+# Data Structures and Algorithms C++/Python
 
 Algorithms and Data Structures were never my strongest suits during my bachelor's.<br> 
 So bored during the 2020 pandemic lockdown I decided to study exactly that and thus, this repository was born in a galaxy far away...<br>
