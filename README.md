@@ -11,6 +11,7 @@ So bored during the 2020 pandemic lockdown I decided to study exactly that and t
  <h2> Contents </h2>
  <ul>
  <li><a href='https://github.com/stqc/datastructures_algorithms_cpp/blob/master/merge_sort.cpp'> Merge Sort </a></li>
+ <li>Quick Sort<ul><li><a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/quick_sort.py'> Python version </a></li></ul></li>
  </ul>
  
  <b><i>adding more soon..</b></i>
