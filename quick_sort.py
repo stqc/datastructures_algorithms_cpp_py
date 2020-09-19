@@ -1,26 +1,26 @@
-x=[3,12,1,5,0,99,76,12,90,-1]
-
-
-def quick_sort(x):
-    if len(x)>1: #if the length of the list is greater than 1 then..
-        i=1
-        j=1
-        pivot = x[0] #setting pivot as the first value of the list
+def quick_sort(x, low, high): #quick sort function using pivot as the 0th value in the list
+    
+    i = low 
+    if low<high: #if low is less than high the following is performed
+        for j in range(low,high): #main loop
+                
+                if x[j]<= x[low-1]: #if jth value of x i less than the pivot value
+                    temp = x[i]     #we swap the ith value of the list with the jth value
+                    x[i] = x[j]
+                    x[j] = temp
+                    i+=1
         
-        while j<len(x): #while the value of j is less than the length of the list
-            if x[j]<pivot: 
-                temp = x[j]
-                x[j] = x[i] #if jth value of the list is less than the pivot then we swap the ith value with jth value
-                x[i] = temp # and incrememt both i and j
-                i+=1
-                j+=1    
-            elif x[j]>=pivot:#if jth value is greater than or equal to pivot we increment j
-                j+=1
-        x.insert(i-1,x.pop(0)) #putting the pivot in it's correct position
-        
-        x[:i]=quick_sort(x[:i])#recursive call on the left side of the pivot
-        x[i:]=quick_sort(x[i:])#recursive call on the right side of the pivot
+        temp = x[i-1] #and then we swap the i-1th value with the pivot value
+        x[i-1] = x[low-1]
+        x[low-1]=temp 
+         
+        quick_sort(x,low,i-1) #recursive calls on the left side of the list
+        quick_sort(x,i+1,high) #recurssive call on the right side of the list
+    
     return x
-        
-        
-print(quick_sort(x))
+
+x=[3,12,1,5,0,99,76,12,90,-1,69]
+print(f"before sorting: {x}")
+x=quick_sort(x,1,len(x))
+
+print(f"after sorting: {x}")
