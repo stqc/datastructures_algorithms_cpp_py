@@ -10,7 +10,8 @@ void Rselect(vector<int> &vec, int id, int start, int last); // search function 
 int main(){
 
 int id;
-vector<int> x  = {3, 6, 8, 9, 11, 2, 19, 12, 27, 18, 16};
+vector<int> x  = {300, 600, 800, 900, 101, 20, 1009, 102, 270, 1800, 160,30,500,109}; // arbitrary vector to search from
+
 cout<<"Given Array: ";
 for(int i =0; i <x.size(); i++)
 {
@@ -20,33 +21,38 @@ for(int i =0; i <x.size(); i++)
 cout<<"\nEnter the n smallest number to find: ";
 cin>>id;
 
-Rselect(x, x.size(), id, 1, x.size());
+Rselect(x, id, 1, x.size()); // function call
 
 }
 
-void Rselect(vector<int> &vec, int len, int id, int start, int last){
+void Rselect(vector<int> &vec, int id, int start, int last){ // function definition
     int pivot  = vec[start-1];
     int i = start;
     int j;
+    //main loop to sort a sub vector to look for the element
     for (j= start; j<last; j++){
-        if(vec[j]<pivot){
+        if(vec[j]<=pivot){
             int temp = vec[i];
             vec[i]= vec[j];
             vec[j]= temp;
             i++;
         }
     }
+        //swapping pivot with the start value
         int temp = vec[i-1];
         vec[i-1] = pivot;
         vec[start-1] = temp;
+    // checking if the index of the pivot is less than the index of the value we are looking for
     if(i-1<id-1){
-        Rselect(vec,vec.size(),id,i+1,last);
+        Rselect(vec,id,i+1,last); // if so we recursively call the Rselect function with the starting index being 1 more than the index of pivot.
     }
+    // checking if the index of the pivot is greater than the index of the value we are looking for
     else if(i-1>id-1){
-        Rselect(vec,len,id,start,i-1);
+        Rselect(vec,id,start,i-1);// if so we recursively call the Rselect function with the last index being 1 less than the index of pivot.
     }
+    //element found
     else if(i-1==id-1){
-        cout<<"\nThe element in question is:"<<vec[i-1];
+        cout<<"\nThe element in question is:"<<vec[i-1]<<"\n";
     }
 }
 
