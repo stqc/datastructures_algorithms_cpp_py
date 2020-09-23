@@ -10,7 +10,7 @@ So bored during the 2020 pandemic lockdown I decided to study exactly that and t
   <br>So I decided to do all this in C++. <b><i>(2 birds with 1 stone I guess?).</b></i>
  
  <h2> Contents </h2>
- <ul>
+ <ul><li><a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/recursive_selection_sort.cpp'>Recursive Selection Sort</a> </li>
  <li><a href='https://github.com/stqc/datastructures_algorithms_cpp/blob/master/merge_sort.cpp'> Merge Sort </a></li>
  <li>Quick Sort<ul><li><a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/quick_sort.py'> Python version </a></li>
   <li><a href = 'https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/quick_sort.cpp'>C++ version</a></li></ul></li>
