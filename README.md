@@ -19,4 +19,8 @@ So bored during the 2020 pandemic lockdown I decided to study exactly that and t
  <b><i>adding more soon..</b></i>
 <br><h2> Other programs</h2>
 <ul><li><a href='https://github.com/stqc/datastructures_algorithms_cpp/blob/master/counting_inversions.cpp'>Counting Inversions</a></li>
- <li><a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/quick_sort_search.cpp'>Quick Search(finding the nth order statistic)</a></li></ul>
+ <li><a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/quick_sort_search.cpp'>Quick Search(finding the nth order statistic)</a></li>
+ <li>First recurring number<ul>
+  <li><a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/first_recurring_number.cpp'>C++</a></li>
+  <li><a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/first_recurring_number.py'>Python</a></li></ul></li></ul>
+ 
