@@ -9,7 +9,7 @@ class doubly_list: #doubly linked list head
         self.head = None
 
 l = doubly_list() #new doubly linked list
-
+last = None
 def insert_at_start(data,linked): #insertion at the start of the list
     if linked.head is None: #if the list is empty
         linked.head = node(data=data, previous = None, next = None) #assign head as new Node
@@ -20,6 +20,7 @@ def insert_at_start(data,linked): #insertion at the start of the list
 
 
 def insert_at_end(data,linked): #insertion at the end
+    global last
     if linked.head is None: #if the list is empty
         linked.head = node(data,prvious=None,next=None) #assign head a new node
     else: #if the list is not empty
@@ -27,6 +28,7 @@ def insert_at_end(data,linked): #insertion at the end
         while temp.next is not None: #traverse till temp.next is not None
             temp = temp.next
         temp.next = node(data=data,previous=temp,next=None) #set temp.next to a new Node
+        last = temp.next
 
 def insert_at_index(data,linked,index):# insertion at an index
     if linked.head is None: #if the list is empty
@@ -62,6 +64,8 @@ def delete_from_end(linked): #delete from the end
             s = s.next #set s to s.next
         s = s.previous #set to s.previous
         s.next = None #set s.next to None
+        global last
+        last = s
 
 def delete_at_index(linked,index): #delete at an index
     if linked.head is None: #if list is empty
@@ -90,6 +94,7 @@ def traverse(linked): #traverse
         s = s.next
     print(s.data)
     print("Traversal from tail to head")
+    s = last
     while s.previous is not None:
         print(s.data)
         s = s.previous
