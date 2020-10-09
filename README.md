@@ -31,5 +31,10 @@ So bored during the 2020 pandemic lockdown I decided to study exactly that and t
    <li><a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/doubly_linked_list.cpp'> C++</a></li>
   </ul>
  </li>
+ <li> Reversing a linked list
+  <ul>
+   <li><a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/reversing_linked_list.py'>Python</a></li>
+  </ul>
+ </li>
 </ul>
  
