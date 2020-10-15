@@ -7,7 +7,7 @@ So bored during the 2020 pandemic lockdown I decided to study exactly that and t
  <br><H2> Why C++/Python? </h2>
   I love python :D<br>
   and, I wanted to learn something more than just python <i><b>(I really do love that language).</b></i>
-  <br>So I decided to do all this in C++. <b><i>(2 birds with 1 stone I guess?).</b></i>
+  <br>So I decided to do all this in C++ too. <b><i>(2 birds with 1 stone I guess?).</b></i>
  
  <h2> Contents </h2>
  <ul><li><a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/recursive_selection_sort.cpp'>Recursive Selection Sort</a> </li>
@@ -40,6 +40,7 @@ So bored during the 2020 pandemic lockdown I decided to study exactly that and t
  <li> Stack
   <ul>
    <li> <a href = 'https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/stack.py'> Python </a> </li>
+   <li> <a href ='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/stack.cpp'> C++ </a></li>
   </ul>
  </li>
 </ul>
