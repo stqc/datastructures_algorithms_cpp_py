@@ -1,29 +1,31 @@
+/*Stacks using linked lists*/
+
 #include<iostream>
 
 using namespace std;
-
-class stacks{
+//The stack class
+class stacks{ 
 public:
     int data;
     stacks *next;
 };
 
-void push(stacks *s, int data){
+void push(stacks *s, int data){ //Push method
 
-    if(!s->data){
+    if(!s->data){ // if the stack is empty
         s->data = data;
         s->next = NULL;
     }
-    else{
+    else{ // if the stack is not empty
         stacks *temp = new stacks();
         temp->data = s->data;
         temp->next = s->next;
-        s->data = data;
+        s->data = data; 
         s->next = temp;
     }
 }
 
-void pop(stacks *s){
+void pop(stacks *s){ // pop method
 
     stacks *temp = new stacks();
     temp = s->next;
@@ -31,7 +33,7 @@ void pop(stacks *s){
     s->next = temp->next;
 }
 
-void display(stacks *s){
+void display(stacks *s){ // display the stack
 
     while(true){
         cout<<s->data<<endl;
