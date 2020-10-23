@@ -43,5 +43,11 @@ So bored during the 2020 pandemic lockdown I decided to study exactly that and t
    <li> <a href ='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/stack.cpp'> C++ </a></li>
   </ul>
  </li>
+ <li>Binary Search Tree
+  <ul>
+   <li> <a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/binary_search_tree.py'>Python</a>
+   </li>
+  </ul>
+ </li>
 </ul>
  
