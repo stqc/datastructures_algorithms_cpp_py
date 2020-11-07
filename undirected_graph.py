@@ -1,20 +1,19 @@
 class graph:
     adj_list={}
-    def __init__(self,vertex):
+    def __init__(self,vertex): #provide a vertex when creating a new graph
+        self.adj_list[vertex]=[] #a new key with the vertex value is added to the adjacency list
 
-        self.adj_list[vertex]=[]
-
-    def add_vertex(self, vertex):
-        if self.adj_list.get(vertex):
+    def add_vertex(self, vertex): #method to add more vertex
+        if self.adj_list.get(vertex): #if the vertex already exists
             print('vertex already exists')
         else:
-            self.adj_list[vertex]=[]
+            self.adj_list[vertex]=[] #else add another key to the adjacency list
 
-    def add_edge(self,v1,v2):
-        if self.adj_list.get(v1) is not None and self.adj_list.get(v2) is not None:
-            if v2 not in self.adj_list[v1] and v1 not in self.adj_list[v2]:
-                self.adj_list[v1].append(v2)
-                self.adj_list[v2].append(v1)
+    def add_edge(self,v1,v2): #method to add an edge between nodes
+        if self.adj_list.get(v1) is not None and self.adj_list.get(v2) is not None: #if the vertex exists
+            if v2 not in self.adj_list[v1] and v1 not in self.adj_list[v2]: #and the edge doesn't already exist
+                self.adj_list[v1].append(v2) #add vertex v2 to v1's list
+                self.adj_list[v2].append(v1) #add vertex v1 to v2's list
             else:
                 print('Edge already exists')
 
