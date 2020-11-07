@@ -51,5 +51,11 @@ So bored during the 2020 pandemic lockdown I decided to study exactly that and t
    </li>
   </ul>
  </li>
+ <li>
+  Graphs
+  <ul>
+   <li>
+    <a href ='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/undirected_graph.py'>Python(Undirected graph)</a>
+   </li>
 </ul>
  
