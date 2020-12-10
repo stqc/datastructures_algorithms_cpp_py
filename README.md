@@ -16,6 +16,7 @@ So bored during the 2020 pandemic lockdown I decided to study exactly that and t
   <li> <a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/merge_sort.py'> Python</a></li></ul></li>
  <li>Quick Sort<ul><li><a href='https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/quick_sort.py'> Python version </a></li>
   <li><a href = 'https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/quick_sort.cpp'>C++ version</a></li></ul></li>
+ <li><a href = 'https://github.com/stqc/datastructures_algorithms_cpp_py/blob/master/depth_first_traversal.py'>Depth First Traversal</a></li>
  </ul>
  
  <b><i>adding more soon..</b></i>
